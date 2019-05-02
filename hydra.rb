@@ -2,9 +2,9 @@
 class Hydra < Formula
   desc ""
   homepage "https://www.ory.sh"
-  url "https://github.com/ory/hydra/releases/download/v1.0.0-rc.10/hydra_1.0.0-rc.10_macOS_64-bit.tar.gz"
-  version "1.0.0-rc.10"
-  sha256 "140f5d00fd3a86503d4c00c8140d4ee5f777f408a627a741c20ff2d7eb65e46e"
+  url "https://github.com/ory/hydra/releases/download/v1.0.0-rc.11/hydra_1.0.0-rc.11_macOS_64-bit.tar.gz"
+  version "1.0.0-rc.11"
+  sha256 "7c0a628b87e927a30e49b4f6d9ae23aa67209f841237d94480953e206bdd4311"
 
   def install
     bin.install "hydra"
