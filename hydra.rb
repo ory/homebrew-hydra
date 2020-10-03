@@ -2,24 +2,24 @@
 class Hydra < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "1.7.4"
+  version "1.8.0-pre.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/hydra/releases/download/v1.7.4/hydra_1.7.4_macOS_64-bit.tar.gz"
-    sha256 "0bcde528523666052434be492f4fc198966355945acfd750a67d8ff74884923a"
+    url "https://github.com/ory/hydra/releases/download/v1.8.0-pre.1/hydra_1.8.0-pre.1_macOS_64-bit.tar.gz"
+    sha256 "035b85bd485e776714b493be0a0e22ef1cd3c280dee57520c37f4a6f9d267ad1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/hydra/releases/download/v1.7.4/hydra_1.7.4_linux_64-bit.tar.gz"
-      sha256 "b37963d8335c93cc7def91b235fed272b44585559f496c86a19cb54d40e8812b"
+      url "https://github.com/ory/hydra/releases/download/v1.8.0-pre.1/hydra_1.8.0-pre.1_linux_64-bit.tar.gz"
+      sha256 "2018d7f8cf5a05411518a1df39d4dd4d3ea56f19cb9d9ca0d845bf1fa7e533c3"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ory/hydra/releases/download/v1.7.4/hydra_1.7.4_linux_arm64.tar.gz"
-        sha256 "b370eb38825cece24cbf284e8cedec36544fd615fb0af6aacc21defa665e93a1"
+        url "https://github.com/ory/hydra/releases/download/v1.8.0-pre.1/hydra_1.8.0-pre.1_linux_arm64.tar.gz"
+        sha256 "601c39a81175cad10bd3a462a1a2b94727f926a53be6166182082ab27a7141ef"
       else
-        url "https://github.com/ory/hydra/releases/download/v1.7.4/hydra_1.7.4_linux_armv6.tar.gz"
-        sha256 "d0a3aa246c9ce270b35ed9ffd30bd6de046a25455b6e3cfc979914df6623ccc8"
+        url "https://github.com/ory/hydra/releases/download/v1.8.0-pre.1/hydra_1.8.0-pre.1_linux_armv6.tar.gz"
+        sha256 "e9dd6bc38cec43d9071515e13e53fb46370d053f338ff1a32493da90294ca6a6"
       end
     end
   end
