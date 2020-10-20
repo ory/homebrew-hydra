@@ -2,29 +2,21 @@
 class Hydra < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "1.8.5"
+  version "1.9.0-alpha.0.pre.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/hydra/releases/download/v1.8.5/hydra_1.8.5_macOS_64-bit.tar.gz"
-    sha256 "249f6f118902e10c46982267e94eae2bcb075e7c4e41a8181026ca8c5a6ef627"
+    url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.0.pre.2/hydra_1.9.0-alpha.0.pre.2-sqlite_macos_64bit.tar.gz"
+    sha256 "261aa4a426d5fface084b8c16336652805ead745ce34da9ff97dada7ebd84317"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/hydra/releases/download/v1.8.5/hydra_1.8.5_linux_64-bit.tar.gz"
-      sha256 "4787711c2f758e53219d62da433c7a80f08cfa9127dd82cf4284dd43f2b5f959"
-    end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ory/hydra/releases/download/v1.8.5/hydra_1.8.5_linux_arm64.tar.gz"
-        sha256 "07625e6d1b505ab65b2b36d2456eb366e252b14d0a906bd3eae0310d5f8fd06c"
-      else
-        url "https://github.com/ory/hydra/releases/download/v1.8.5/hydra_1.8.5_linux_armv6.tar.gz"
-        sha256 "944dc4a5b94463e43b2ea52ae01f36741bdb689cc30bd8dbb6aebe588ae921e4"
-      end
+      url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.0.pre.2/hydra_1.9.0-alpha.0.pre.2-sqlite_linux_64bit.tar.gz"
+      sha256 "404888d72f5ae64ed9520fb3ae26bedb85b0afc2d29f5c0bf248312deb588e7c"
     end
   end
 
   def install
+    bin.install "hydra"
     bin.install "hydra"
   end
 end
