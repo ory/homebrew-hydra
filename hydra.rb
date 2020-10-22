@@ -17,6 +17,5 @@ class Hydra < Formula
 
   def install
     bin.install "hydra"
-    bin.install "hydra"
   end
 end
