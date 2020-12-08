@@ -2,16 +2,16 @@
 class Hydra < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "1.9.0-alpha.3.pre.1"
+  version "1.9.0-alpha.3.pre.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.3.pre.1/hydra_1.9.0-alpha.3.pre.1-sqlite_macos_64bit.tar.gz"
-    sha256 "94077ed35e61a451fd6099173ab7ccd9faa13769884c518e3ff1a5b754d25b6d"
+    url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.3.pre.2/hydra_1.9.0-alpha.3.pre.2-sqlite_macos_64bit.tar.gz"
+    sha256 "6cc1f336a6983eea7e52abaa0d1b0351cce36ee9508521a75fc8a94fcad063a6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.3.pre.1/hydra_1.9.0-alpha.3.pre.1-sqlite_linux_64bit.tar.gz"
-      sha256 "ea2c1d2d32cbd239517d3cd9cb74e35019542fa11615a408fbf8cc1641cca7b9"
+      url "https://github.com/ory/hydra/releases/download/v1.9.0-alpha.3.pre.2/hydra_1.9.0-alpha.3.pre.2-sqlite_linux_64bit.tar.gz"
+      sha256 "33296b7fdb3444496dbc8db94cd48812e6a0ec7ad50467204af09b38937f87f3"
     end
   end
 
